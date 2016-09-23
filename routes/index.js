@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+router.get('/partial', function(req, res, next) {
+  res.render('partial');
+});
+
 router.get('/logicong', function(req, res, next) {
   res.render('logicong');
 });
