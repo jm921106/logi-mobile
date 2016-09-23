@@ -1,0 +1,177 @@
+/*
+여기는 페이지마다 공통적으로 들어가는 css를 넣는 곳입니다
+created by se june
+*/
+
+html{
+    line-height: 2.0;
+}
+
+.bg-1 {
+    background: url(../images/1.jpg) no-repeat center / cover !important;
+}
+
+.p-0{
+    padding : 0 !important;
+}
+
+.l1{
+    font-size: 22.5px;
+}
+.l2{
+    font-size: 20px;
+}
+.l3{
+    font-size: 14px;
+}
+.l4{
+    font-size: 12px;
+}
+
+/* id로 커스텀 필요 */
+/*.h-banner {*/
+    /*height: 75vw;*/
+    /*width: 100vw;*/
+/*}*/
+
+/*.h-banner .parallax {*/
+    /*height: 75vw;*/
+    /*width: 100vw;*/
+/*}*/
+
+.heading-container {
+    padding: 20px 20px 20px 20px;
+}
+
+.box-custom {
+    position: absolute;
+    margin: 15px 0 0 15px;
+    padding: 5px 5px 5px 5px;
+    z-index: 1;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.long-box-custom{
+    position: absolute;
+    padding: 5px 5px 5px 5px;
+    z-index: 1;
+    display: inline-block;
+    border: 1px solid white;
+}
+
+.kakao-color > .box-custom {
+    border: 1px solid saddlebrown;
+}
+
+.pos-custom {
+    position: relative !important;
+}
+
+.box-custom p {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0 !important;
+}
+
+.p-t-50 {
+    padding-top: 50px !important;
+}
+
+
+.heading-container > p {
+    /* sejune */
+    /*margin-bottom: 20px !important;*/
+    margin-bottom: 0 !important;
+}
+
+.blog-preview > .l2 {
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+
+.blog-preview > .l3 {
+    margin: 0 !important;
+}
+
+.kakao-color .blog-preview .l3 {
+    text-align: left;
+    margin: 5px 0 0 0;
+}
+
+.blog-preview > a {
+    margin-top: 10px;
+}
+
+.blog-preview img {
+    position: relative;
+    float: right;
+    max-width: 30vw;
+}
+
+.kakao-color {
+    background-color: #fcec27;
+}
+
+.background-color{
+    background-color: #F1F4F5;
+}
+
+.box-before{
+    padding-top: 0 !important;
+}
+
+.heading {
+    font-size: 20px;
+}
+
+.heading:after {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-fullwidth {
+    padding: 20px 20px 0 20px;
+    margin-bottom: 0 !important;
+}
+
+.blog-img-custom {
+    position: relative;
+    z-index: 0;
+    margin: 0 4em 0 4em !important;
+}
+
+.blog-card .blog-preview {
+    padding: 0px 15px 15px 15px;
+}
+
+.primary-color{
+    background-color: #4cc378 !important;
+}
+
+.halo-nav.h-bg {
+    background-color: #4cc378 !important;
+}
+
+.bg-custom {
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+}
+
+.l1{
+    font-size: 22.5px;
+}
+.l2{
+    font-size: 20px;
+}
+.l3{
+    font-size: 14px;
+}
+.l4{
+    font-size: 12px;
+}
+
+
+
+
