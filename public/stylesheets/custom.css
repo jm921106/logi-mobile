@@ -44,6 +44,10 @@ html{
 
 .yellow-color{
     background-color: #FFF46D !important;
+    color: #116e51;
+}
+.brown-color{
+    background-color: #795548 !important;
 }
 
 .white-color{
@@ -90,6 +94,9 @@ html{
     display: inline-block;
     border: 1px solid white;
 }
+.box-custom.kakao {
+    border: 1px solid #795548 !important;
+}
 
 #cus-title {
     font-size : 22.5px !important;
@@ -103,3 +110,4 @@ html{
 .dcdcdc-color {
     color : #cdcdcd;
 }
+
