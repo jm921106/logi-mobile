@@ -71,10 +71,40 @@
             <span class="title none">LOGICONG</span>
         </div>
 
-        <!-- Hero Header -->
         <div class="h-banner animated fadeindown ratio4-3">
-            <div class="parallax bg-1"></div>
+            <div class="parallax">
+                <!-- Slider -->
+                <div class="swiper-container slider swiper-container-horizontal swiper-container-android">
+                    <div class="swiper-wrapper"
+                         style="transform: translate3d(-640px, 0px, 0px); transition-duration: 0ms;">
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                            class="swiper-pagination-bullet"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+                </div>
+                <!-- End of Slider -->
+                <div class="banner-title"></div>
+            </div>
         </div>
+
+        <!--&lt;!&ndash; Hero Header &ndash;&gt;-->
+        <!--<div class="h-banner animated fadeindown ratio4-3">-->
+        <!--<div class="parallax bg-1"></div>-->
+        <!--</div>-->
+
 
         <!-- Contents -->
         <div class="animated fadeInUp background-color">
@@ -87,32 +117,65 @@
             </div>
 
             <!-- Main Content -->
-            <div class="animated fadeinup delay-1 white-color">
+            <div class="animated fadeinup delay-1">
+                <!-- 상단 레이어 -->
+                <div class="white-color">
+                    <div class="blog-fullwidth Logi-blog-fullwidth">
+                        <div class="blog-image">
+                            <img src="images/logi/intro1.jpg" alt="">
+                            <div class="opacity-overlay-top"></div>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="l2 center-align">자기주도학습</p>
+                            <p class="l3"><b>게임하는 아이를 게임을 만드는 아이로!</b>코딩교육은 아이를 수동적인 프로그램 사용자에서 게임을 직접만들면서 능동적인 프로그램
+                                제작자로
+                                변화시켜줍니다.</p>
+                        </div>
+                    </div>
 
-                <div class="blog-fullwidth Logi-blog-fullwidth">
-                    <div class="blog-image">
-                        <img src="images/logi/Logi-blog1.png" alt="">
-                        <div class="opacity-overlay-top"></div>
+                    <!-- content2 -->
+                    <div class="blog-fullwidth Logi-blog-fullwidth">
+                        <div class="blog-image">
+                            <img src="images/logi/intro2.jpg" alt="">
+                            <div class="opacity-overlay-top"></div>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="l2 center-align">논리적사고</p>
+                            <p class="l3"><b>외우는 아이를 생각하는 아이로!</b>코딩교육은 '컴퓨터적 사고'를 길러주며, 아이가 단순히 암기하는 것이 아닌 사고를 통해
+                                학습하는 습관을
+                                길러줍니다.</p>
+                        </div>
                     </div>
-                    <div class="blog-preview">
-                        <p class="l2 center-align">자기주도학습</p>
-                        <p class="l3">로지콩은 어린이를 위한 코딩교육플랫폼으로써 아이들이 프로그래밍을 게임처럼 배우면서 통합적인 논리사고능력을 키울 수 있도록 도와줍니다.</p>
-                    </div>
-                </div>
 
-                <div class="blog-fullwidth Logi-blog-fullwidth white-color">
-                    <div class="blog-image">
-                        <img src="images/logi/Logi-blog1.png" alt="">
-                        <div class="opacity-overlay-top"></div>
+                    <!-- content3 -->
+                    <div class="blog-fullwidth Logi-blog-fullwidth">
+                        <div class="blog-image">
+                            <img src="images/logi/intro3.jpg" alt="">
+                            <div class="opacity-overlay-top"></div>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="l2 center-align">문제해결능력</p>
+                            <p class="l3"><b>하나를 가르치면 열을 아는 아이로!</b>코딩교육은 아이들의 수학/과학적 사고능력을 길러주며, 이런 컴퓨팅적 사고는
+                                문제해결능력이 뛰어난 아이를
+                                만듭니다.</p>
+                        </div>
                     </div>
-                    <div class="blog-preview">
-                        <p class="l2 center-align">자기주도학습</p>
-                        <p class="l3">로지콩은 어린이를 위한 코딩교육플랫폼으로써 아이들이 프로그래밍을 게임처럼 배우면서 통합적인 논리사고능력을 키울 수 있도록 도와줍니다.</p>
+
+                    <!-- content4 -->
+                    <div id="last-box" class="blog-fullwidth Logi-blog-fullwidth">
+                        <div class="blog-image">
+                            <img src="images/logi/intro4.jpg" alt="">
+                            <div class="opacity-overlay-top"></div>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="l2 center-align">교과성적 향상</p>
+                            <p class="l3">코딩교육은 아이를 수동적인 프로그램 사용자에서 게임을 직접만들면서 능동적인 프로그램 제작자로 변화시켜줍니다.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div id="start-box" class="background-color">
-                    <div  class="blog-card bg-custom white-text">
+                    <div class="blog-card bg-custom white-text">
                         <div class="blog-img-custom">
                             <img src="/images/logi/Logi-imac.png" alt="">
                         </div>
@@ -133,9 +196,8 @@
                         <div class="box-custom">
                             <p class="l4">블로그</p>
                         </div>
-
                         <div class="blog-image">
-                            <img src="/images/logi/Logi-blog2.png" alt="">
+                            <img src="/images/logi/intro1.jpg" alt="">
                         </div>
                         <div class="blog-preview">
                             <p class="l2">자기주도학습</p>
@@ -148,13 +210,13 @@
                         <div class="box-custom">
                             <p class="l4">블로그</p>
                         </div>
-
                         <div class="blog-image">
-                            <img src="/images/logi/Logi-blog2.png" alt="">
+                            <img src="/images/logi/intro2.jpg" alt="">
                         </div>
                         <div class="blog-preview">
                             <p class="l2">자기주도학습</p>
-                            <p class="l3">로지콩은 어린이를 위한 코딩교육플랫폼으로써 아이들이 프로그래밍을 게임처럼 배우면서 통합적인 논리사고능력을 키울 수 있도록 도와줍니다.</p>
+                            <p class="l3">로지콩은 어린이를 위한 코딩교육플랫폼으로써 아이들이 프로그래밍을 게임처럼 배우면서 통합적인 논리사고능력을 키울 수 있도록
+                                도와줍니다.</p>
                             <a href="article" class="waves-effect waves-light btn primary-color">더보기</a>
                         </div>
                     </div>
@@ -167,7 +229,8 @@
 
                         <div class="blog-preview">
                             <img src="images/logi/Logi-mainkakao.png" alt="">
-                            <b><p class="l3 brown-text">로지콩과 카카오친구가 되시면 실시간 상담은 물론 다양한 아이들의 교육정보를 받아보실 수 있어요.</p></b>
+                            <b><p class="l3 brown-text">로지콩과 카카오친구가 되시면 실시간 상담은 물론 다양한 아이들의 교육정보를 받아보실 수
+                                있어요.</p></b>
                             <a href="http://plus.kakao.com/home/lvwnfnbi"
                                class="waves-effect waves-light btn brown">카카오톡</a>
                         </div>
@@ -175,43 +238,44 @@
                 </div>
 
             </div>
+        </div>
+    </div>
 
-            <!-- Footer -->
-            <footer class="page-footer primary-color">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12">
-                            <p class="center-align grey-text text-lighten-4">You can use rows and columns here to
-                                organize your footer content.</p>
-                            <div class="center-align">
-                                <i class="ion-social-facebook m-10 white-text"></i>
-                                <i class="ion-social-twitter m-10 white-text"></i>
-                                <i class="ion-social-pinterest m-10 white-text"></i>
-                                <i class="ion-social-dribbble m-10 white-text"></i>
-                            </div>
-                        </div>
+    <!-- Footer -->
+    <footer class="page-footer primary-color">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align grey-text text-lighten-4">You can use rows and columns here
+                        to
+                        organize your footer content.</p>
+                    <div class="center-align">
+                        <i class="ion-social-facebook m-10 white-text"></i>
+                        <i class="ion-social-twitter m-10 white-text"></i>
+                        <i class="ion-social-pinterest m-10 white-text"></i>
+                        <i class="ion-social-dribbble m-10 white-text"></i>
                     </div>
                 </div>
-                <div class="footer-copyright primary-color">
-                    <div class="container">
-                        2016 Codnauts
-                        <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
-                    </div>
-                </div>
-            </footer>
+            </div>
+        </div>
+        <div class="footer-copyright primary-color">
+            <div class="container">
+                2016 Codnauts
+                <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Page Content -->
 
-
-        </div> <!-- End of Page Content -->
-
-    </div> <!-- End of Page Container -->
-    <script src="/javascripts/jquery-2.1.0.min.js"></script>
-    <script src="/javascripts/jquery.swipebox.min.js"></script>
-    <script src="/javascripts/jquery.smoothState.min.js"></script>
-    <script src="/javascripts/materialize.min.js"></script>
-    <script src="/javascripts/swiper.min.js"></script>
-    <script src="/javascripts/jquery.mixitup.min.js"></script>
-    <script src="/javascripts/masonry.min.js"></script>
-    <script src="/javascripts/chart.min.js"></script>
-    <script src="/javascripts/functions.js"></script>
+</div> <!-- End of Page Container -->
+<script src="/javascripts/jquery-2.1.0.min.js"></script>
+<script src="/javascripts/jquery.swipebox.min.js"></script>
+<script src="/javascripts/jquery.smoothState.min.js"></script>
+<script src="/javascripts/materialize.min.js"></script>
+<script src="/javascripts/swiper.min.js"></script>
+<script src="/javascripts/jquery.mixitup.min.js"></script>
+<script src="/javascripts/masonry.min.js"></script>
+<script src="/javascripts/chart.min.js"></script>
+<script src="/javascripts/functions.js"></script>
 </body>
 </html>

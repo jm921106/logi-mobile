@@ -2,21 +2,24 @@
 <html>
 <head>
     <title>Handlebars Partials Example</title>
-
     <script src="/javascripts/jquery-2.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+    <script src="/javascripts/include.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("/views/header.html");
+            $("#footer").load("/views/footer.html");
+        });
+    </script>
+    <link rel="import" href="footer.html">
+
 </head>
 
 
 <body>
+    <h1>hello ~~~ test</h1>
 
-{{> myPartial }}
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        Handlebars.registerPartial('myPartial', '{{}}')
-    });
-</script>
-
+    <div id="header"></div>
+    <div id="footer"></div>
 </body>
 </html>

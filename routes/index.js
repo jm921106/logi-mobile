@@ -10,6 +10,14 @@ router.get('/partial', function(req, res, next) {
   res.render('partial');
 });
 
+router.get('/leftPanel', function(req, res, next) {
+  res.render('include/leftPanel');
+});
+
+router.get('/footer', function(req, res, next) {
+  res.render('include/footer');
+});
+
 router.get('/logicong', function(req, res, next) {
   res.render('logicong');
 });
