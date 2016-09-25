@@ -3,13 +3,13 @@
 created by supermoon
 */
 
-
-.header-text-pos {
-    margin : 57px;
-}
-
 #short-banner {
     height: 172px;
+}
+
+#short-banner-title {
+    line-height: 1.5 !important;
+    margin : 57px;
 }
 
 #icon-fix {
@@ -20,14 +20,12 @@ created by supermoon
     margin-bottom: 8%;
 }
 
-#cus-line-height {
-    line-height: 1.5 !important;
-}
+
 
 #cus-line-block {
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
-    /*display:inline-block;*/
-    /*width:100px;*/
+    display:inline-block;
+    width:100px;
 }
