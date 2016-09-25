@@ -6,6 +6,25 @@
     /*border : none;*/
 /*}*/
 
+.pop-out-box{
+    padding: 5.5vw 5.5vw 0 5.5vw !important;
+}
+.pop-out-box-list{
+    margin:0 !important;
+}
+.pop-out-box-list li {
+    margin : 0 !important;
+}
+.pop-out-box-list div{
+    line-height: 1.5rem !important;
+    padding : 1rem !important;
+}
+.bottom-box{
+    padding-top: 0 !important;
+}
+/*#pop-out-list{*/
+    /*margin: 0;*/
+/*}*/
 /*.Logi-input input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {*/
 
 /*}*/
