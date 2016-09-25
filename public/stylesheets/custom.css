@@ -44,6 +44,10 @@ html{
 }
 
 .white-color{
+    background-color: #FFFFFF;
+}
+
+.background-color{
     background-color: #F1F4F5;
 }
 
@@ -74,10 +78,6 @@ html{
 }
 
 /*    4. 커스텀 클래스    */
-.box-before{
-    padding-top: 0 !important;
-}
-
 .box-custom {
     z-index: 2;
     position: absolute;
