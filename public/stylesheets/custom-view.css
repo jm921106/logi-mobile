@@ -3,18 +3,23 @@
 created by supermoon
 */
 
+
 .header-text-pos {
-    margin : 45px;
+    margin : 57px;
 }
 
 #short-banner {
-    height: 155px;
+    height: 172px;
 }
 
 #icon-fix {
     min-height: 0%;
     min-width : 0%;
-    height : 40px;
-    width : 40px;
-    margin-bottom: 10%;
+    height : 45px;
+    width : 45px;
+    margin-bottom: 8%;
+}
+
+#cus-line-height {
+    line-height: 1.5 !important;
 }

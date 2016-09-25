@@ -26,6 +26,9 @@ html{
 .l4{
     font-size: 12px;
 }
+.l5{
+    font-size : 18px;
+}
 
 
 /*    2. 색상, 이미지    */
@@ -83,4 +86,13 @@ html{
     z-index: 1;
     display: inline-block;
     border: 1px solid white;
+}
+
+#cus-title {
+    font-size : 22.5px !important;
+    font-weight : 600 !important;;
+}
+
+.cus-grey-color {
+    color : #ececec;
 }
