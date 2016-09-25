@@ -9,7 +9,8 @@
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <!-- Icons -->
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet"
+          type="text/css">
     <!-- Styles -->
     <link href="/stylesheets/keyframes.css" rel="stylesheet" type="text/css">
     <link href="/stylesheets/materialize.min.css" rel="stylesheet" type="text/css">
@@ -38,11 +39,12 @@
                 <div class="nav-avatar">
                     <img class="circle avatar" src="images/user.jpg" alt="">
                     <div class="avatar-body">
-                        <h3>LOGIN</h3>
+                        <h3>Logicong</h3>
                     </div>
                 </div>
             </div>
         </li>
+
         <li><a href="/" class="no-child"><i class="ion-android-home"></i> HOME</a></li>
         <li><a href="/logicong" class="no-child"><i class="ion-person-stalker"></i> Logicong</a></li>
         <li><a href="/swEdu" class="no-child"><i class="ion-university"></i> SW교육센터</a></li>
@@ -53,27 +55,76 @@
     <!-- End of Sidebars -->
 
     <!-- Page Content -->
-    <div id="content" class="page">
+    <div id="content">
 
         <!-- Toolbar -->
-        <div id="toolbar" class="primary-color">
+        <div id="toolbar" class="halo-nav box-shad-none">
             <div class="open-left" id="open-left" data-activates="slide-out-left">
                 <i class="ion-android-menu"></i>
             </div>
-            <span class="title">Contact</span>
-            <div class="open-right" id="open-right" data-activates="slide-out">
-                <i class="ion-android-person"></i>
+            <span class="title none">LogiCong !?</span>
+        </div>
+
+        <!-- Hero Header -->
+        <div id="short-banner" class="h-banner animated fadeindown">
+            <div class="parallax primary-color">
+
+                <div class="header-text-pos">
+                    <div class="l4 text-color">로지콩에게 물어보세요</div>
+                    <div class="l1 white-text">상담신청</div>
+                </div>
+
             </div>
         </div>
 
         <!-- Main Content -->
-        <div class="animated fadeinup">
+        <div class="animated fadeinup background-color">
 
-            <iframe class="animated fadein" width="100%" height="350px"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1583.714506850952!2d127.12826530167376!3d37.45059139391168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39d64e7ee201cd15!2z6rCA7LKc64yA7ZWZ6rWQIOq4gOuhnOuyjOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1474622433618" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- Pop Out -->
+        <div id="pop-out-box">
+            <p class="l3">로지콩과 관련된 자주묻는 질문들입니다.</p>
+            <p class="l4">아래의 궁금하신 질의내용을 선택하시면 자세한 답변을 확인하실 수 있습니다.</p>
+        </div>
+            <ul class="faq collapsible popout animated fadeinright delay-2 m-0" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header l4"><i class="ion-android-add right"></i>Q 제품을 구매하고 싶은데 어떻게 하면 되죠?</div>
+                    <div class="collapsible-body"><p>TEXT1</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header l4"><i class="ion-android-add right"></i>Q 소량구매도 가능한가요?</div>
+                    <div class="collapsible-body"><p>TEXT2</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header l4"><i class="ion-android-add right"></i>Q 매크로통상의 가맹점 파트너가 되고 싶습니다.</div>
+                    <div class="collapsible-body"><p>TEXT3</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header l4"><i class="ion-android-add right"></i>Q 메크로통상 제품을 마케팅 및 홍보하고 싶습니다. </div>
+                    <div class="collapsible-body"><p>TEXT4</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header l4"><i class="ion-android-add right"></i>Q 채용제도는 어떻게 되어있나요?</div>
+                    <div class="collapsible-body"><p>TEXT5</p></div>
+                </li>
+            </ul>
+
+
+            <div class="blog-card kakao-color">
+                <div class="box-custom pos-custom">
+                    <p class="l4 brown-text">카카오톡</p>
+                </div>
+
+                <div class="blog-preview">
+                    <img src="images/logi/Logi-mainkakao.png" alt="">
+                    <b><p class="l3 brown-text">로지콩과 카카오친구가 되시면 실시간 상담은 물론 다양한 아이들의 교육정보를 받아보실 수
+                        있어요.</p></b>
+                    <a href="http://plus.kakao.com/home/lvwnfnbi"
+                       class="waves-effect waves-light btn brown">카카오톡</a>
+                </div>
+            </div>
 
             <!-- Form Inputs -->
             <div class="form-inputs">
-
                 <p class="center l2">로지콩에게 모든 물어보세요!</p>
                 <div>
                     <div class="input-field animated fadeinright Logi-input">
@@ -100,11 +151,12 @@
                 </div>
 
                 <p class="remember animated bouncein delay-6">
-                    <input type="checkbox" id="test5" />
+                    <input type="checkbox" id="test5"/>
                     <label for="test5">This is an awesome checkbox</label>
                 </p>
 
-                <a class="waves-effect waves-light btn-large primary-color width-100 animated bouncein delay-6" href="index.html">Send</a>
+                <a class="waves-effect waves-light btn-large primary-color width-100 animated bouncein delay-6"
+                   href="index.html">Send</a>
             </div>
 
             <!-- Footer -->
@@ -112,7 +164,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12">
-                            <p class="center-align grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                            <p class="center-align grey-text text-lighten-4">You can use rows and columns here to
+                                organize your footer content.</p>
                             <div class="center-align">
                                 <i class="ion-social-facebook m-10 white-text"></i>
                                 <i class="ion-social-twitter m-10 white-text"></i>
