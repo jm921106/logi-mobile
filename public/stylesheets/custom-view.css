@@ -23,3 +23,11 @@ created by supermoon
 #cus-line-height {
     line-height: 1.5 !important;
 }
+
+#cus-line-block {
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    /*display:inline-block;*/
+    /*width:100px;*/
+}

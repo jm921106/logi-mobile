@@ -30,7 +30,6 @@ html{
     font-size : 18px;
 }
 
-
 /*    2. 색상, 이미지    */
 .bg-1 {
     background: url(../images/1.jpg) no-repeat center / cover !important;
@@ -93,6 +92,8 @@ html{
     font-weight : 600 !important;;
 }
 
-.cus-grey-color {
+.ececec-color {
     color : #ececec;
 }
+
+.dcdcdc-color

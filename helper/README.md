@@ -20,3 +20,29 @@ Style.css
 6. 기본 이미지 1,2,3,4,5,6,7,8,9 => 1로 통일
      user1,2,3,4,5,.... => user1로 통일
 /*------------------------------------
+
+view단 화면 명세
+
+sub title :
+font-size : 18px
+color : #ececec
+
+title : 
+font-size : 22.5px
+color : white
+bord : 600
+
+short-banner :
+height : 172px
+margin : 57px
+
+/*================================
+
+new단 화면 - ajax 작업
+
+메인 태그 날리고
+리스트 태그태신 콘텐츠 일부 2줄 최대 ... 처리
+line height 1.5
+cdcdcd 칼라 
+font h5 { font-size: 12px;}
+
