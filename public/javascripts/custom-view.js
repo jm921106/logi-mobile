@@ -8,9 +8,9 @@ $('.parallax').parallax();
 $(function () {
     var hBanner = $('#short-banner').height();
     // var cbHeight = hBanner - 56;
-    var cbHeight = hBanner - 28;
+    var cbHeight = hBanner - 56;
     // var hHeight = hBanner - 86; // for Title
-    var hHeight = hBanner -28; // for Title
+    var hHeight = hBanner -56; // for Title
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= cbHeight) {
@@ -21,11 +21,13 @@ $(function () {
         }
         // For heading Title
         if (scroll >= hHeight) {
-            $(".banner-title").hide();
+            // $(".banner-title").hide();
+            $("#short-banner-title").hide();
             $(".halo-nav .title").show();
         }
         if (scroll <= hHeight) {
-            $(".banner-title").show();
+            // $(".banner-title").show();
+            $("#short-banner-title").show();
             $(".halo-nav .title").hide();
         }
     });
