@@ -73,6 +73,13 @@ created by se june
     max-width: 30vw;
 }
 
+/*  태블릿     */
+@media all and (min-width: 760px){
+    .blog-preview img{
+        max-width: 20vw;
+    }
+}
+
 .blog-card{
     margin : 5.5vw;
 }
@@ -107,9 +114,6 @@ created by se june
     padding: 5.5vw 5.5vw 0 5.5vw;
     margin-bottom: 0 !important;
 }
-.box-before{
-    padding-top: 0 !important;
-}
 
 .text-custom{
     margin: 14.5vw 0 2.75vw 0;
@@ -118,4 +122,12 @@ created by se june
     z-index: 2;
     position: relative;
     width: 80%;
+}
+
+.blog-image img{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+#start-box{
+    /*margin: 5.5vw 5.5vw 5.5vw 5.5vw;*/
 }

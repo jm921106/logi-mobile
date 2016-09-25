@@ -17,9 +17,9 @@ Primary use: App & Mobile Website
 /*------------------------------------------------------------------
 1. Typography
 -------------------------------------------------------------------*/
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nanum Gothic', 'Open Sans', sans-serif;
     background: #fff;
     color: #76838f;
     overflow-x: hidden;
