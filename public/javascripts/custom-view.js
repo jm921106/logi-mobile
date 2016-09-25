@@ -3,6 +3,11 @@
  * 허정문에 의해 수정된 js 파일입니다
  */
 
+// notice 줄바꿈처리 jquery
+$(document).ready(function(){
+    $('.box').dotdotdot();
+});
+
 // Material Layout
 $('.parallax').parallax();
 $(function () {
@@ -48,3 +53,5 @@ $(function () {
         });
     });
 });
+
+

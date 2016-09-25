@@ -40,9 +40,11 @@ margin : 57px
 
 new단 화면 - ajax 작업
 
-메인 태그 날리고
-리스트 태그태신 콘텐츠 일부 2줄 최대 ... 처리
-line height 1.5
-cdcdcd 칼라 
 font h5 { font-size: 12px;}
+cdcdcd 칼라 
+line height 1.5
+콘텐츠 2줄 최대 ... 처리 (dotdotdot.js lib이용)
+
+
+
 

@@ -3,15 +3,17 @@
 created by supermoon
 */
 
+/*b-banner custom */
 #short-banner {
     height: 172px;
 }
-
+/*b-banner-title custom */
 #short-banner-title {
     line-height: 1.5 !important;
     margin : 57px;
 }
 
+/* icon[img] custom 위치 잡기*/
 #icon-fix {
     min-height: 0%;
     min-width : 0%;
@@ -20,12 +22,11 @@ created by supermoon
     margin-bottom: 8%;
 }
 
-
-
-#cus-line-block {
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    display:inline-block;
-    width:100px;
+/* ...처리 height fix [className - .box 고정]*/
+.box {
+    height : 50px !important;
 }
+
+
+
+
