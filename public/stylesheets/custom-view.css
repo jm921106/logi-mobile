@@ -2,13 +2,17 @@
 여기는 view page에 공통으로 들어가는 css 입니다
 created by supermoon
 */
+#cus-title {
+    font-size : 22.5px !important;
+    font-weight : 600 !important;;
+}
 
 .header-text-pos {
-    margin : 45px;
+    margin : 52px;
 }
 
 #short-banner {
-    height: 155px;
+    height: 156px;
 }
 
 #icon-fix {
@@ -17,4 +21,12 @@ created by supermoon
     height : 40px;
     width : 40px;
     margin-bottom: 10%;
+}
+
+.cus-grey-color {
+    color : #ececec;
+}
+
+#cus-line-height {
+    line-height: 1.5 !important;
 }
