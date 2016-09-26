@@ -171,7 +171,7 @@ function initiate_plugins() {
     // Material Layout
     $('.parallax').parallax();
     $(function () {
-        var hBanner = $('.h-banner').height();
+        var hBanner = $('.h-banner-default').height();
         var cbHeight = hBanner - 56;
         var hHeight = hBanner - 86; // for Title
         $(window).scroll(function () {
