@@ -1,3 +1,6 @@
+/*
+* init()
+* */
 $(function () {
     'use strict';
 
@@ -24,7 +27,8 @@ $(function () {
                 $('#bottom-sheet').closeModal();
                 $container.addClass('is-exiting');
                 smoothState.restartCSSAnimations();
-                setTimeout(function () { }, duration_CONSTANT * 2);
+                setTimeout(function () {
+                }, duration_CONSTANT * 2);
             }
         },
         onReady: {
@@ -36,7 +40,8 @@ $(function () {
         },
         onAfter: function ($container, $newContent) {
             setTimeout(function () {
-                ResizeHandler = ResizeHandler || function () { };
+                ResizeHandler = ResizeHandler || function () {
+                    };
                 ResizeHandler();
             }, 500)
             initiate_plugins(); // All onAfter calls goes inside this function
@@ -44,6 +49,29 @@ $(function () {
     };
     var smoothState = $('#main').smoothState(options).data('smoothState');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ////--> Call all function for Ajax <--////
 function initiate_plugins() {
 
@@ -137,7 +165,8 @@ function initiate_plugins() {
         // Instantiate MixItUp with some custom options:
         try {
             $container.mixItUp('destroy');
-        } catch (x) { }
+        } catch (x) {
+        }
         $container.mixItUp({
             animation: {
                 animateChangeLayout: true, // Animate the positions of targets as the layout changes
@@ -168,9 +197,77 @@ function initiate_plugins() {
         });
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Material Layout
     $('.parallax').parallax();
     $(function () {
+        var hBanner = $('.h-banner').height();
+        var cbHeight = hBanner - 56;
+        var hHeight = hBanner - 86; // for Title
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= cbHeight) {
+                $(".halo-nav").addClass('h-bg');
+            }
+            if (scroll <= cbHeight) {
+                $(".halo-nav").removeClass('h-bg');
+            }
+            // For heading Title
+            if (scroll >= hHeight) {
+                $(".banner-title").hide();
+                $(".halo-nav .title").show();
+            }
+            if (scroll <= hHeight) {
+                $(".banner-title").show();
+                $(".halo-nav .title").hide();
+            }
+        });
+        // opacity Plush button
+        var fadeStart = 50 // 100px scroll or less will equiv to 1 opacity
+        fadeUntil = 150 // 150px scroll or more will equiv to 0 opacity
+        fading = $('.resize');
+        $(window).on('scroll', function () {
+            var offset = $(document).scrollTop(),
+                opacity = 0;
+            if (offset <= fadeStart) {
+                opacity = 1;
+            } else if (offset <= fadeUntil) {
+                opacity = 1 - offset / fadeUntil;
+            }
+            fading.css({
+                'transform': 'scale(' + opacity + ')'
+            });
+        });
+    });
+
+  
+    $(function () {
+        // var hBanner = $('.h-banner').height();
         var hBanner = $('.h-banner-default').height();
         var cbHeight = hBanner - 56;
         var hHeight = hBanner - 86; // for Title
@@ -209,6 +306,55 @@ function initiate_plugins() {
             });
         });
     });
+
+
+    /*
+     * short-banner를 이용한 custom처리 
+     */
+    $(function () {
+        var hBanner = $('#short-banner').height();
+        // var cbHeight = hBanner - 56;
+        var cbHeight = hBanner - 56;
+        // var hHeight = hBanner - 86; // for Title
+        var hHeight = hBanner - 56; // for Title
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= cbHeight) {
+                $(".halo-nav").addClass('h-bg');
+            }
+            if (scroll <= cbHeight) {
+                $(".halo-nav").removeClass('h-bg');
+            }
+            // For heading Title
+            if (scroll >= hHeight) {
+                // $(".banner-title").hide();
+                $("#short-banner-title").hide();
+                $(".halo-nav .title").show();
+            }
+            if (scroll <= hHeight) {
+                // $(".banner-title").show();
+                $("#short-banner-title").show();
+                $(".halo-nav .title").hide();
+            }
+        });
+        // opacity Plush button
+        var fadeStart = 50 // 100px scroll or less will equiv to 1 opacity
+        fadeUntil = 150 // 150px scroll or more will equiv to 0 opacity
+        fading = $('.resize');
+        $(window).on('scroll', function () {
+            var offset = $(document).scrollTop(),
+                opacity = 0;
+            if (offset <= fadeStart) {
+                opacity = 1;
+            } else if (offset <= fadeUntil) {
+                opacity = 1 - offset / fadeUntil;
+            }
+            fading.css({
+                'transform': 'scale(' + opacity + ')'
+            });
+        });
+    });
+
 
     // Chart
     // Charts
@@ -307,6 +453,23 @@ function initiate_plugins() {
 
 }
 ////--> End of Call all function for Ajax, now from there recall all the functions <--////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Tabs
@@ -430,6 +593,20 @@ $(function () {
     });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // MixItUp
 $(function () {
     var layout = 'grid', // Store the current layout as a variable
@@ -468,12 +645,30 @@ $(function () {
     // init swiper layout
     window.onload = function () {
         setTimeout(function () {
-            ResizeHandler = ResizeHandler || function () { };
+            ResizeHandler = ResizeHandler || function () {
+                };
             ResizeHandler();
         }, 500)
     };
 
-});$(function () {
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(function () {
     'use strict';
 
     /* Prevent Safari opening links when viewing as a Mobile App */
@@ -499,7 +694,8 @@ $(function () {
                 $('#bottom-sheet').closeModal();
                 $container.addClass('is-exiting');
                 smoothState.restartCSSAnimations();
-                setTimeout(function () { }, duration_CONSTANT * 2);
+                setTimeout(function () {
+                }, duration_CONSTANT * 2);
             }
         },
         onReady: {
@@ -511,7 +707,8 @@ $(function () {
         },
         onAfter: function ($container, $newContent) {
             setTimeout(function () {
-                ResizeHandler = ResizeHandler || function () { };
+                ResizeHandler = ResizeHandler || function () {
+                    };
                 ResizeHandler();
             }, 500)
             initiate_plugins(); // All onAfter calls goes inside this function
@@ -612,7 +809,8 @@ function initiate_plugins() {
         // Instantiate MixItUp with some custom options:
         try {
             $container.mixItUp('destroy');
-        } catch (x) { }
+        } catch (x) {
+        }
         $container.mixItUp({
             animation: {
                 animateChangeLayout: true, // Animate the positions of targets as the layout changes
@@ -943,9 +1141,23 @@ $(function () {
     // init swiper layout
     window.onload = function () {
         setTimeout(function () {
-            ResizeHandler = ResizeHandler || function () { };
+            ResizeHandler = ResizeHandler || function () {
+                };
             ResizeHandler();
         }, 500)
     };
-
 });
+
+
+/**
+ * Created by superMoon on 2016-09-25.
+ * 허정문에 의해 수정된 js 파일입니다
+ */
+
+// notice 줄바꿈처리 jquery
+$(document).ready(function () {
+    $('.box').dotdotdot();
+});
+
+
+
