@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var hbs = require('hbs');
+var fs = require('fs');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,6 +16,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -21,6 +24,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// hbs.registerPartial('leftSideBar', 'left-side-bar');
+// hbs.registerPartial('footer', 'footer');
+// hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartial('leftSideBar', fs.readFileSync(__dirname + '/views/partials/left-side-bar.hbs', 'utf8'));
+hbs.registerPartial('header', fs.readFileSync(__dirname + '/views/partials/header.hbs', 'utf8'));
+hbs.registerPartial('footerCopyright', fs.readFileSync(__dirname + '/views/partials/footerCopyright.hbs', 'utf8'));
+hbs.registerPartial('footer', fs.readFileSync(__dirname + '/views/partials/footer.hbs', 'utf8'));
 
 app.use('/', routes);
 app.use('/users', users);
