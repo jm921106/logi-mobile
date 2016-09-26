@@ -731,7 +731,8 @@ footer.page-footer {
 .side-nav .no-child:hover,
 .side-nav .active .collapsible-header,
 .side-nav .active .collapsible-body li a:hover {
-    color: #2196F3;
+    /*color: #2196F3;*/
+    color: #4cc378;
     opacity: 1;
 }
 .side-nav .collapsible-header.active:before {

@@ -174,12 +174,12 @@ function initiate_plugins() {
             }
         });
     });
-    
+
     // Material Layout
     $('.parallax').parallax();
     /*
-    * banner animation default
-    * */
+     * banner animation default
+     * */
     $(function () {
         // var hBanner = $('.h-banner').height();
         var hBanner = $('.h-banner-default').height();
@@ -280,39 +280,24 @@ function initiate_plugins() {
         });
     });
     $(".Logi-inputs").blur(function () {
-        if ($(this).val() == "")
+        if ($(this).val() == "") {
             $(this).closest('.input-field').closest('.Logi-input').css({
                 "border": "1px solid #9e9e9e",
                 "padding-top": "0px",
                 "box-shadow": "none"
             });
-        else
+        }else {
             $(this).closest('.input-field').closest('.Logi-input').css({
-                "border": "1px solid #9e9e9e",
+                "border": "1px solid #a0cf77",
                 "padding-top": "10px",
-                "box-shadow": "none"
+                "box-shadow": "1px 1px 1px 1px #a0cf77"
             });
+        }
     });
-    
+
+
 }
 ////--> End of Call all function for Ajax, now from there recall all the functions <--////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Tabs
@@ -543,7 +528,6 @@ $(document).ready(function () {
 });
 
 
-
 /**
  * Created by superMoon on 2016-09-25.
  * 오세준에 의해 수정된 js 파일입니다
@@ -558,19 +542,19 @@ $(".Logi-inputs").focus(function () {
 });
 
 $(".Logi-inputs").blur(function () {
-    if ($(this).val() == "")
+    if ($(this).val() == "") {
         $(this).closest('.input-field').closest('.Logi-input').css({
             "border": "1px solid #9e9e9e",
             "padding-top": "0px",
             "box-shadow": "none"
         });
-    else
+    }else {
         $(this).closest('.input-field').closest('.Logi-input').css({
             "border": "1px solid #a0cf77",
             "padding-top": "10px",
-            // "box-shadow": "none"
             "box-shadow": "1px 1px 1px 1px #a0cf77"
         });
+    }
 });
 
 
