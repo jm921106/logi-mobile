@@ -73,50 +73,58 @@
             </div>
 
 
-            <div class="blog-card kakao-color">
-                <div class="box-custom pos-custom">
-                    <p class="l4 brown-text">카카오톡</p>
+            <div class="blog-card bg-kakao white-text">
+                <div class="blog-img-custom">
+                    <img src="/images/logi/Logi-kakao.png" alt="">
                 </div>
 
-                <div class="blog-preview">
-                    <img src="images/logi/Logi-mainkakao.png" alt="">
-                    <b><p class="l3 brown-text">로지콩과 카카오친구가 되시면 실시간 상담은 물론 다양한 아이들의 교육정보를 받아보실 수
-                        있어요.</p></b>
-                    <a href="http://plus.kakao.com/home/lvwnfnbi"
-                       class="waves-effect waves-light btn brown">카카오톡</a>
+                <div class="box-custom kakao pos-custom">
+                    <p class="l4 brown-text">카카오톡</p>
                 </div>
+                <div class="kakao-text-custom">
+                    <img src="/images/logi/Logi-kakao-text.png" alt="">
+                </div>
+                <a href="article" class="waves-effect waves-light btn brown-color">친구추가하기</a>
             </div>
 
             <!-- Form Inputs -->
             <div class="form-inputs white-color bottom-box">
-                <p class="center l2">로지콩에게 모든 물어보세요!</p>
-                <div>
-                    <div class="input-field animated fadeinright Logi-input">
-                        <input id="first_name" type="text" class="">
+                <p class="center l2">메세지로 문의하기</p>
+                <p class="l4">아래의 기본정보와 함께 궁금한 사항을 작성해주시면 발빠르게 답변드리겠습니다</p>
+                <div class="Logi-input">
+                    <div class="input-field animated fadeinright">
+                        <input id="first_name" type="text" class="active Logi-inputs">
                         <label for="first_name">자녀명</label>
                     </div>
-                    <div class="input-field animated fadeinright delay-1 Logi-input">
-                        <input id="last_name" type="text" class="validate">
+                </div>
+
+                <div class="Logi-input">
+                    <div class="input-field animated fadeinright delay-1">
+                        <input id="last_name" type="text" class="validate Logi-inputs">
                         <label for="last_name">학년</label>
                     </div>
                 </div>
-                <div class="input-field animated fadeinright delay-2 Logi-input">
-                    <input id="email" type="email">
-                    <label for="email">이메일</label>
-                </div>
-                <div class="input-field animated fadeinright delay-3 Logi-input">
-                    <input id="telephone" type="text" class="validate">
-                    <label for="telephone">전화번호</label>
+                <div class="Logi-input">
+                    <div class="input-field animated fadeinright delay-2">
+                        <input id="email" type="email" class="Logi-inputs">
+                        <label for="email">이메일</label>
+                    </div>
                 </div>
 
-                <div class="input-field animated fadeinright delay-5 Logi-input">
-                    <textarea class="materialize-textarea" id="textarea1"></textarea>
-                    <label for="textarea1">문의사항</label>
+                <div class="Logi-input">
+                    <div class="input-field animated fadeinright delay-3">
+                        <input id="telephone" type="text" class="validate Logi-inputs">
+                        <label for="telephone">전화번호</label>
+                    </div>
                 </div>
-                <br>
-
+                <div class="Logi-input">
+                    <div class="input-field animated fadeinright delay-5">
+                        <textarea class="materialize-textarea Logi-inputs" id="textarea1"></textarea>
+                        <label for="textarea1">문의사항</label>
+                    </div>
+                </div>
                 <a class="waves-effect waves-light btn-large primary-color width-100 animated bouncein delay-6"
-                   href="index.html">Send</a>
+                   href="index.html">문의하기</a>
             </div>
 
             {{> footerCopyright}}
@@ -127,8 +135,6 @@
     </div> <!-- End of Page Content -->
 
 </div> <!-- End of Page Container -->
-
-
 {{> footer}}
 </body>
 </html>
