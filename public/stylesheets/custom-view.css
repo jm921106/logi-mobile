@@ -3,11 +3,11 @@
 created by supermoon
 */
 
-/*b-banner custom */
-#short-banner {
-    height: 172px;
+/*h-banner custom */
+.short-banner {
+    height: 172px !important;
 }
-/*b-banner-title custom */
+/*h-banner-title custom */
 #short-banner-title {
     line-height: 1.5 !important;
     margin : 57px;
